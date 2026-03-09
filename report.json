@@ -1,0 +1,548 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 12,
+    "passes": 12,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 12,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2026-03-09T13:28:30.354Z",
+    "end": "2026-03-09T13:29:06.428Z",
+    "duration": 36074
+  },
+  "results": [
+    {
+      "uuid": "84c89594-3929-4219-b830-9b35ad3090d8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Ejercicios 02 Marzo.cy.js",
+      "file": "cypress\\e2e\\Ejercicios 02 Marzo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "061bf7fa-9607-42eb-9cd5-4f819e3a9f59",
+          "title": "Cypress Ejercicios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Ejercicio 1 – Nivel básico",
+              "fullTitle": "Cypress Ejercicios Ejercicio 1 – Nivel básico",
+              "timedOut": null,
+              "duration": 1537,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Kitchen Sink').should('be.visible');\ncy.contains('type').should('exist');",
+              "err": {},
+              "uuid": "1c8d3e86-f1c9-4851-87da-bf31648a57be",
+              "parentUUID": "061bf7fa-9607-42eb-9cd5-4f819e3a9f59",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ejercicio 2 – Nivel medio",
+              "fullTitle": "Cypress Ejercicios Ejercicio 2 – Nivel medio",
+              "timedOut": null,
+              "duration": 981,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('type').click();\ncy.get('.action-email').type('Kevin').should('have.value', 'Kevin');",
+              "err": {},
+              "uuid": "525c0e93-9875-45cf-a8cc-285ddb7d7636",
+              "parentUUID": "061bf7fa-9607-42eb-9cd5-4f819e3a9f59",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ejercicio 3 – Nivel medio",
+              "fullTitle": "Cypress Ejercicios Ejercicio 3 – Nivel medio",
+              "timedOut": null,
+              "duration": 866,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.home-list').contains('Actions').click();\ncy.get('.well [type=\"checkbox\"]').check({\n  force: true\n}).should('be.checked');",
+              "err": {},
+              "uuid": "816b3d0d-685c-4beb-b1dc-d7ab981e6b2a",
+              "parentUUID": "061bf7fa-9607-42eb-9cd5-4f819e3a9f59",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ejercicio 4 – Nivel avanzado",
+              "fullTitle": "Cypress Ejercicios Ejercicio 4 – Nivel avanzado",
+              "timedOut": null,
+              "duration": 1120,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.home-list').contains('Actions').click();\ncy.get('#email1').type('prueba@ejemplo.com');\ncy.get('.action-form').within(() => {\n  cy.get('[type=\"text\"]').type('CUPON123');\n  cy.root().submit();\n});\ncy.contains('Your form has been submitted!').should('be.visible');",
+              "err": {},
+              "uuid": "b2c884f3-640e-453b-8cab-e2adfffffec0",
+              "parentUUID": "061bf7fa-9607-42eb-9cd5-4f819e3a9f59",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ejercicio 5 – Nivel avanzado",
+              "fullTitle": "Cypress Ejercicios Ejercicio 5 – Nivel avanzado",
+              "timedOut": null,
+              "duration": 1769,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io/commands/actions');\ncy.get('#email1').type('admin@test.com');\ncy.get('#password1').type('password123');\ncy.get('.action-form').submit();\ncy.contains('Your form has been submitted!').should('be.visible');\ncy.contains('Querying').click({\n  force: true\n});\ncy.url().should('include', '/commands/querying');\ncy.get('.navbar-brand').click();\ncy.url().should('eq', 'https://example.cypress.io/');\ncy.contains('Kitchen Sink').should('be.visible');",
+              "err": {},
+              "uuid": "434afe10-066e-488d-8182-e2d701c64449",
+              "parentUUID": "061bf7fa-9607-42eb-9cd5-4f819e3a9f59",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1c8d3e86-f1c9-4851-87da-bf31648a57be",
+            "525c0e93-9875-45cf-a8cc-285ddb7d7636",
+            "816b3d0d-685c-4beb-b1dc-d7ab981e6b2a",
+            "b2c884f3-640e-453b-8cab-e2adfffffec0",
+            "434afe10-066e-488d-8182-e2d701c64449"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6273,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "717716e9-4fb0-46e6-8369-8b8b75dc97a7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\apiPrueba.cy.js",
+      "file": "cypress\\e2e\\apiPrueba.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a2981952-beea-49fa-870e-02f816ba0a10",
+          "title": "Prueba de API",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Debe responder con status 200",
+              "fullTitle": "Prueba de API Debe responder con status 200",
+              "timedOut": null,
+              "duration": 604,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request(\"https://jsonplaceholder.typicode.com/posts/1\").its(\"status\").should(\"equal\", 200);",
+              "err": {},
+              "uuid": "5ecdb32e-003c-45a6-ad29-e48f7a5ed275",
+              "parentUUID": "a2981952-beea-49fa-870e-02f816ba0a10",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar el GET de la lista de usuarios",
+              "fullTitle": "Prueba de API Validar el GET de la lista de usuarios",
+              "timedOut": null,
+              "duration": 134,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request(\"https://jsonplaceholder.typicode.com/users\").then(response => {\n  expect(response.status).to.equal(200);\n  expect(response.body).to.have.length(10);\n  expect(response.body[0]).to.have.property(\"name\", \"Leanne Graham\");\n});",
+              "err": {},
+              "uuid": "64ca4279-6970-4f77-b664-63ec4944db25",
+              "parentUUID": "a2981952-beea-49fa-870e-02f816ba0a10",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5ecdb32e-003c-45a6-ad29-e48f7a5ed275",
+            "64ca4279-6970-4f77-b664-63ec4944db25"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 738,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b25bd7fb-8de1-43fd-9f5e-37ba95ea3304",
+      "title": "",
+      "fullFile": "cypress\\e2e\\btn.cy.js",
+      "file": "cypress\\e2e\\btn.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f7cdda4a-77ff-4f94-936a-4f7a78921dc9",
+          "title": "Prueba de botones",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Debe hacer clic en el boton",
+              "fullTitle": "Prueba de botones Debe hacer clic en el boton",
+              "timedOut": null,
+              "duration": 1451,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://example.cypress.io\");\ncy.contains(\"type\").click();",
+              "err": {},
+              "uuid": "73d82db9-ab73-4e84-8a7a-cef4dd989670",
+              "parentUUID": "f7cdda4a-77ff-4f94-936a-4f7a78921dc9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "73d82db9-ab73-4e84-8a7a-cef4dd989670"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1451,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "1f4e23a3-6199-4a38-a2b5-7cac5c6f45a3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\ejer.cy.js",
+      "file": "cypress\\e2e\\ejer.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dfcb0e2b-0c1e-497d-9847-b3711d0c4883",
+          "title": "mi primera prueba",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verficar valores de variables",
+              "fullTitle": "mi primera prueba Verficar valores de variables",
+              "timedOut": null,
+              "duration": 66,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var a = 10;\nvar b = 20;\nexpect(a).to.equal(10);\nexpect(b).to.equal(20);",
+              "err": {},
+              "uuid": "c01d7bd4-05ba-43b6-b8c4-862157505067",
+              "parentUUID": "dfcb0e2b-0c1e-497d-9847-b3711d0c4883",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c01d7bd4-05ba-43b6-b8c4-862157505067"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 66,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "999c2af4-7ae2-4cae-ad1f-95c800fcc473",
+      "title": "",
+      "fullFile": "cypress\\e2e\\formulario.cy.js",
+      "file": "cypress\\e2e\\formulario.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3ebe378b-8478-4740-ad0d-75b889684f4c",
+          "title": "Prueba de formulario",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Debe diligenciar formulario",
+              "fullTitle": "Prueba de formulario Debe diligenciar formulario",
+              "timedOut": null,
+              "duration": 1934,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://example.cypress.io/commands/actions\");\ncy.get(\"#email1\").type(\"prueba@correo.com\");\ncy.get(\"#password1\").type(\"123456\");\ncy.get(\".action-form\").submit();",
+              "err": {},
+              "uuid": "d92efeea-529c-4391-b86a-a704100d05e7",
+              "parentUUID": "3ebe378b-8478-4740-ad0d-75b889684f4c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d92efeea-529c-4391-b86a-a704100d05e7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1934,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5f345aba-dcee-411c-8bb6-0fa5ceaead4e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\spec.cy.js",
+      "file": "cypress\\e2e\\spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0274d552-a1bc-45d1-9614-310e8cbb7820",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 1223,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');",
+              "err": {},
+              "uuid": "9b90915d-5c5d-4327-81f2-8a7cd4b547c0",
+              "parentUUID": "0274d552-a1bc-45d1-9614-310e8cbb7820",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9b90915d-5c5d-4327-81f2-8a7cd4b547c0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1223,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d1354861-3c40-49d8-b254-4b6e4fa90e21",
+      "title": "",
+      "fullFile": "cypress\\e2e\\title.cy.js",
+      "file": "cypress\\e2e\\title.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a76580df-b979-42cc-bf3e-822b273b5985",
+          "title": "Prueba de de titulo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar titulo",
+              "fullTitle": "Prueba de de titulo Verificar titulo",
+              "timedOut": null,
+              "duration": 1481,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://example.cypress.io\");\ncy.title().should(\"include\", \"Cypress\");",
+              "err": {},
+              "uuid": "6c65ee41-d915-451d-98fc-18966bc8059c",
+              "parentUUID": "a76580df-b979-42cc-bf3e-822b273b5985",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6c65ee41-d915-451d-98fc-18966bc8059c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1481,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
